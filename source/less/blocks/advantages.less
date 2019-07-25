@@ -1,8 +1,25 @@
 .advantages {
+  width: 100%;
+  min-height: 850px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   color: #000000;
   padding: 30px;
   outline: 1px solid #ececec;
+}
+
+.advantages__list {
+  width: 320px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages {
+    min-height: 627px;
+  }
+  .advantages__list {
+    width: 100%;
+  }
 }

@@ -1,4 +1,6 @@
 .page-intro {
+  width: 100%;
+  min-height: 283px;
   background-color: white;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-position: top center;
@@ -7,5 +9,11 @@
   line-height: 30px;
   color: #010000;
   font-weight: 700;
-  outline: 1px solid #ececec;
+}
+
+@media (min-width: @tablet-width) {
+  .page-intro {
+    width: 100%;
+    min-height: 627px;
+  }
 }

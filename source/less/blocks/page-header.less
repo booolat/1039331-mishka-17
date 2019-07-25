@@ -1,11 +1,26 @@
 .page-header {
-  // display: flex;
   min-height: 79px;
-  // outline: 1px solid #ececec;
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // flex-direction: column;
+  background: rgba(71, 179, 82, 0.5);
+  box-shadow: inset 0 0 0 2px rgb(71, 179, 82);
 }
 
 .page-header__logo-image {
+  width: 86px;
   height: 35px;
+  align-self: center;
+}
+
+.page-header__menu-button {
+  width: 100px;
+  align-self: flex-end;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    min-height: 88px;
+  }
 }
