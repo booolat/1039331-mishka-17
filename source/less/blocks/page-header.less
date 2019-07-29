@@ -12,6 +12,12 @@
   margin: 0 auto;
 }
 
+.page-header__logo {
+  width: 86px;
+  height: 35px;
+  margin: 0 auto;
+}
+
 .page-header__menu-button {
   width: 50px;
   position: absolute;
@@ -58,6 +64,11 @@
     display: none;
   }
   .page-header__logo-image {
+    width: 112px;
+    height: 46px;
+    margin: 0;
+  }
+  .page-header__logo {
     margin: 0;
     width: 112px;
     height: 46px;
@@ -94,7 +105,9 @@
   .page-header__logo-image {
     order: 1;
   }
-
+  .page-header__logo {
+    order: 1;
+  }
   .page-header__catalog {
     position: static;
     order: 0;
@@ -121,4 +134,8 @@
     top: 100px;
     left: 290px;
   }
+}
+
+@media (min-width: @desktop-width) {
+
 }
