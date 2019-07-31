@@ -19,46 +19,47 @@
 }
 
 .page-header__menu-button {
-  width: 50px;
+  width: auto;
   position: absolute;
   right: 0;
 }
 
-.page-header__search {
-  display: none;
-}
-
-.page-header__bin {
-  display: none;
-  font-weight: 700;
-}
-
-.page-header__catalog {
-  display: none;
-  font-weight: 700;
-}
-
-.page-header__order-goods {
-  display: none;
-  font-weight: 700;
-}
-
-.page-header__free-shipping {
-  display: none;
-}
-
-.page-header__arrival {
-  display: none;
-}
-
-.page-header__sale {
-  display: none;
-}
+// .page-header__search {
+//   display: none;
+// }
+//
+// .page-header__bin {
+//   display: none;
+//   font-weight: 700;
+// }
+//
+// .page-header__catalog {
+//   display: none;
+//   font-weight: 700;
+// }
+//
+// .page-header__order-goods {
+//   display: none;
+//   font-weight: 700;
+// }
+//
+// .page-header__free-shipping {
+//   display: none;
+// }
+//
+// .page-header__arrival {
+//   display: none;
+// }
+//
+// .page-header__sale {
+//   display: none;
+// }
 
 @media (min-width: @tablet-width) {
   .page-header {
     min-height: 88px;
-    justify-content: space-between;
+    // justify-content: space-between;
+    border-bottom: 1px solid @lightgrey;
   }
 
   .page-header__menu-button {
@@ -76,77 +77,14 @@
     width: 112px;
     height: 46px;
   }
-
-  .page-header__search {
-    display: block;
-    width: 82px;
-  }
-
-  .page-header__bin {
-    display: block;
-    width: 316px;
-  }
-
-  .page-header__catalog {
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 50px;
-  }
-
-  .page-header__order-goods {
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 250px;
-  }
-
-  .page-header__free-shipping {
-    display: block;
-    position: absolute;
-    top: 100px;
-    right: 50px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__logo-image {
-    order: 1;
+    margin: 0 auto;
   }
 
   .page-header__logo {
-    order: 1;
-  }
-
-  .page-header__catalog {
-    position: static;
-    order: 0;
-  }
-
-  .page-header__order-goods {
-    position: static;
-    order: 0;
-  }
-
-  .page-header__search {
-    order: 2;
-  }
-
-  .page-header__bin {
-    order: 2;
-  }
-
-  .page-header__arrival {
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 50px;
-  }
-
-  .page-header__sale {
-    display: block;
-    position: absolute;
-    top: 100px;
-    left: 290px;
+    margin: 0 auto;
   }
 }
