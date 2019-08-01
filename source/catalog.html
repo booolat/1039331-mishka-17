@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -11,27 +13,34 @@
         <img class="page-header__logo-image" src="img/logo-mobile.svg"
         width="86" height="35" alt="Магазин Mishka">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link">Каталог товаров</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Вязание на заказ</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="search.html">Поиск по сайту</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="bin.html">Корзина: пока пуста</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <button class="page-header__menu-button" type="button">Меню</button>
     </header>
     <main>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--catalog">
+            <a class="main-nav__link main-nav__link--catalog">Каталог товаров</a>
+          </li>
+          <li class="main-nav__item main-nav__item--order">
+            <a class="main-nav__link main-nav__link--order" href="form.html">Вязание на заказ</a>
+          </li>
+          <li class="main-nav__item main-nav__item--search">
+            <a class="main-nav__link main-nav__link--search" href="search.html">Поиск по сайту</a>
+          </li>
+          <li class="main-nav__item main-nav__item--bin">
+            <a class="main-nav__link main-nav__link--bin" href="bin.html">Корзина: пока пуста</a>
+          </li>
+          <li class="main-nav__item main-nav__item--shipping">
+            <a class="main-nav__link main-nav__link--shipping" href="shipping.html">Бесплатная доставка по России</a>
+          </li>
+          <li class="main-nav__item main-nav__item--arrival">
+            <a class="main-nav__link main-nav__link--arrival" href="arrival.html">Новые поступления</a>
+          </li>
+          <li class="main-nav__item main-nav__item--sale">
+            <a class="main-nav__link main-nav__link--sale" href="sale.html">Распродажа</a>
+          </li>
+        </ul>
+      </nav>
       <div class="page-title">
         <h1 class="page-title__title">
           Каталог товаров
@@ -40,40 +49,41 @@
       <ul class="goods-list">
         <li class="goods-list__item">
           <a class="goods-list__link" href="knitted-hare.html">
-            <img class="goods-list__image goods-list__image--hare" src="img/hare.jpg"
+            <img class="goods-list__image goods-list__image--hare" src="img/photo-hare-mobile@1x.jpg"
             width="200" height="200" alt="Вязаный зайчик">
           </a>
-          <a class="goods-list__link" href="knitted-hare.html">
-            <h3 class="goods-list__item-title">Зайчик-попрыгайчик</h3>
-          </a>
+          <h3 class="goods-list__item-title">
+            <a class="goods-list__title-link" href="knitted-hare.html">Зайчик-попрыгайчик</a>
+          </h3>
           <p class="goods-list__details">Рост 30 см, вес 200 г</p>
-          <p class="goods-list__price">1200 руб.</p>
+          <p class="goods-list__price">1 200 руб.</p>
         </li>
         <li class="goods-list__item">
           <a class="goods-list__link" href="knitted-bin-big.html">
-            <img class="goods-list__image goods-list__image--clothes-bin" src="img/clothes-bin.jpg"
+            <img class="goods-list__image goods-list__image--clothes-bin" src="img/photo-bowl-mobile@1x.jpg"
             width="200" height="200" alt="Бельевая корзинка">
           </a>
-          <a class="goods-list__link" href="knitted-bin-big.html">
-            <h3 class="goods-list__item-title">Корзинка для белья</h3>
-          </a>
+          <h3 class="goods-list__item-title">
+            <a class="goods-list__title-link" href="knitted-bin-big.html">Корзинка для белья</a>
+          </h3>
           <p class="goods-list__details">Диаметр 15 см, высота 10 см</p>
           <p class="goods-list__price">690 руб.</p>
         </li>
         <li class="goods-list__item">
           <a class="goods-list__link" href="toys-bin.html">
-            <img class="goods-list__image goods-list__image--toys-bin" src="img/toys-bin.jpg"
+            <img class="goods-list__image goods-list__image--toys-bin" src="img/photo-toys-mobile@1x.jpg"
             width="200" height="200" alt="Корзина для игрушек">
           </a>
-          <a class="goods-list__link" href="toys-bin.html">
-            <h3 class="goods-list__item-title">Большая корзинка для игрушек</h3>
-          </a>
+          <h3 class="goods-list__item-title">
+            <a class="goods-list__title-link" href="toys-bin.html">Большая корзинка для игрушек</a>
+          </h3>
           <p class="goods-list__details">Диаметр 30 см, высота 30 см</p>
-          <p class="goods-list__price">1500 руб.</p>
+          <p class="goods-list__price">1 500 руб.</p>
         </li>
-      <ul>
+      </ul>
     </main>
     <footer class="page-footer">
+      <img class="page-footer__logo" src="img/logo-mobile.svg">
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
@@ -88,8 +98,10 @@
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        <div class="copyright__wrapper">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
       </div>
     </footer>
   </body>

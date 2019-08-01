@@ -1,7 +1,66 @@
 .week-deal {
+  box-sizing: border-box;
+  width: 260px;
+  height: 820px;
+  margin: 0 auto;
   font-size: 15px;
   line-height: 24px;
   color: #444444;
-  padding: 30px;
-  outline: 1px solid #ececec;
+  display: flex;
+  flex-direction: column;
+}
+
+.week-deal__item-name {
+  font-size: 25px;
+  line-height: 30px;
+  color: black;
+  margin: 0;
+}
+
+.week-deal__title {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @seafoam-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .week-deal {
+    height: 500px;
+    margin: 0 auto;
+    // margin-left: 50px;
+    width: 668px;
+    flex-wrap: wrap;
+  }
+
+  .week-deal__description {
+    width: 334px;
+  }
+
+  .week-deal__title {
+    width: 334px;
+  }
+
+  .week-deal__item-name {
+    width: 334px;
+  }
+
+  .week-deal__details {
+    width: 334px;
+  }
+
+  .week-deal__price {
+    width: 334px;
+  }
+
+  .week-deal__button {
+    width: 334px;
+  }
+
+  .week-deal__image {
+    order: 1;
+    width: 333px;
+    height: 404px;
+  }
 }
