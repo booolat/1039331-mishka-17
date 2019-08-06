@@ -1,3 +1,22 @@
-// .copyright {
-//   text-align: center;
-// }
+.copyright__link {
+  font-size: 0;
+}
+
+.copyright__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  width: 184px;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.copyright__link svg {
+  margin-top: 14px;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright__wrapper {
+    padding: 0;
+  }
+}

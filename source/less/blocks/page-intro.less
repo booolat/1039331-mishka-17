@@ -12,21 +12,41 @@
   font-weight: 700;
   margin: 0;
   padding: 0;
-  padding-top: 90px;
+  padding-top: 67px;
+  padding-bottom: 22px;
 }
 
 .page-intro__text {
-  width: 300px;
+  width: 215px;
   margin: 0 auto;
 }
 
 @media (min-width: @tablet-width) {
   .page-intro {
-    min-height: 500px;
-    background-size: 772px 650px;
-    // width: 772px;
-    // height: 746px;
-    // background-size: cover;
-    // background-position: center top;
+    min-width: 772px;
+    box-sizing: border-box;
+    min-height: 746px;
+    padding-top: 153px;
+    padding-bottom: 0;
+    background-color: white;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-size: 1150px 746px;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .page-intro__text {
+    width: 500px;
+    min-height: 95px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-intro__text {
+    min-width: 650px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
