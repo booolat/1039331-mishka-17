@@ -1,7 +1,7 @@
 .week-deal {
   box-sizing: border-box;
   width: 260px;
-  height: 820px;
+  height: 795px;
   margin: 0 auto;
   font-size: 15px;
   line-height: 24px;
@@ -23,44 +23,188 @@
   font-weight: 700;
   text-transform: uppercase;
   color: @seafoam-blue;
+  margin: 0;
+  margin-top: 6px;
+  margin-bottom: 22px;
+}
+
+.week-deal__description {
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.week-deal__details {
+  min-height: 122px;
+  margin-bottom: 26px;
+  margin-left: -3px;
+}
+
+.week-deal__tablerow {
+  box-sizing: border-box;
+  padding-top: 5px;
+  display: block;
+  min-height: 40px;
+  border-bottom: 1px solid @lightgrey;
+}
+
+.week-deal__field {
+  padding: 0;
+  width: 95px;
+}
+
+.week-deal__value {
+  padding: 0;
+}
+
+.week-deal__image {
+  width: 260px;
+  height: 315px;
+  margin-bottom: 24px;
+  background-image: url("../img/triple-set-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.week-deal__price {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 26px;
+  color: @greyish-brown;
+}
+
+.week-deal__button {
+  box-sizing: border-box;
+  display: block;
+  width: 260px;
+  min-height: 52px;
+  border: 2px solid @greyish-brown;
+  text-align: center;
+  padding-top: 15px;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @greyish-brown;
 }
 
 @media (min-width: @tablet-width) {
   .week-deal {
-    height: 500px;
+    height: 424px;
     margin: 0 auto;
-    // margin-left: 50px;
     width: 668px;
     flex-wrap: wrap;
+    margin-top: 136px;
+    margin-bottom: 43px;
   }
 
   .week-deal__description {
-    width: 334px;
-  }
-
-  .week-deal__title {
-    width: 334px;
+    width: 282px;
+    min-height: 77px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
 
   .week-deal__item-name {
     width: 334px;
+    position: absolute;
+    top: 880px;
+    font-size: 43px;
+    line-height: 50px;
+    min-width: 480px;
+    min-height: 42px;
+    margin-left: -2px;
+  }
+
+  .week-deal__title {
+    position: absolute;
+    top: 882px;
+    margin-left: 550px;
+    width: 110px;
+    text-align: center;
   }
 
   .week-deal__details {
-    width: 334px;
+    width: 292px;
+    margin-bottom: 56px;
   }
 
   .week-deal__price {
-    width: 334px;
+    min-width: 150px;
+    max-width: 334px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 34px;
   }
 
   .week-deal__button {
-    width: 334px;
+    width: 292px;
+    min-height: 52px;
   }
 
   .week-deal__image {
+    margin-left: 40px;
+    margin-bottom: 0;
+    margin-top: 5px;
     order: 1;
-    width: 333px;
+    width: 334px;
     height: 404px;
+    background-image: url("../img/triple-set-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .week-deal {
+    min-width: 1050px;
+    min-height: 670px;
+    margin-top: 60px;
+    padding-left: 174px;
+  }
+
+  .week-deal__item-name {
+    min-width: 550px;
+    font-size: 53px;
+    line-height: 57px;
+    position: absolute;
+    top: 958px;
+  }
+
+  .week-deal__title {
+    margin-left: -145px;
+    top: 966px;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .week-deal__description {
+    margin-top: 160px;
+    margin-bottom: 46px;
+  }
+
+  .week-deal__details {
+    margin-bottom: 107px;
+  }
+
+  .week-deal__price {
+    width: 290px;
+  }
+
+  .week-deal__image {
+    width: 525px;
+    height: 636px;
+    margin: 0;
+    margin-left: 60px;
+    background-image: url("../img/triple-set-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
   }
 }

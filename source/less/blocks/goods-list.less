@@ -12,12 +12,13 @@
 }
 
 .goods-list__item {
-  height: 374px;
+  min-height: 372px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  flex-wrap: wrap;
   outline: 1px solid @lightgrey;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .goods-list__image {
@@ -36,9 +37,10 @@
 }
 
 .goods-list__item-title {
+  width: 180px;
   margin: 0;
-  margin-top: 18px;
-  margin-bottom: 8px;
+  margin-top: 16px;
+  margin-bottom: 6px;
   padding-left: 28px;
   font-size: 17px;
   line-height: 24px;
@@ -52,20 +54,34 @@
 
 .goods-list__price {
   margin: 0;
-  display: block;
+  margin-left: 28px;
+  margin-right: 28px;
+  display: flex;
+  justify-content: space-between;
   box-sizing: border-box;
   height: 73px;
-  padding-top: 25px;
-  padding-left: 28px;
+  padding-top: 23px;
+  border-top: 1px solid @lightgrey;
+  // padding-left: 28px;
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.goods-list__cart {
+  display: block;
+  width: 20px;
+  height: 19px;
+  background-image: url("../img/cart-svg.svg");
+  background-repeat: no-repeat;
+  opacity: 0.2;
 }
 
 @media (min-width: @tablet-width) {
   .goods-list {
     width: 669px;
     margin: 0 auto;
+    padding-top: 80px;
   }
 
   .goods-list__item {
@@ -74,22 +90,21 @@
     flex-wrap: wrap;
     align-content: flex-start;
     width: 669px;
+    min-height: 334px;
     height: 334px;
+    margin-bottom: 52px;
   }
 
   .goods-list__item-title {
     font-size: 20px;
     line-height: 24px;
-    width: 250px;
+    width: 210px;
+    margin-top: 25px;
   }
 
   .goods-list__image {
     width: 334px;
     height: 334px;
-  }
-
-  .goods-list__title {
-    min-height: 65px;
   }
 
   .goods-list__link {
@@ -98,14 +113,18 @@
   }
 
   .goods-list__details {
-    min-height: 165px;
+    // height: 186px;
     font-size: 15px;
     line-height: 30px;
+    max-width: 300px;
   }
 
   .goods-list__price {
+    margin-top: auto;
+    width: 270px;
     font-size: 17px;
     line-height: 24px;
+    margin-left: 34px;
   }
 }
 
@@ -124,7 +143,7 @@
   .goods-list__item {
     width: 316px;
     height: 659px;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .goods-list__image {
@@ -139,5 +158,11 @@
 
   .goods-list__details {
     min-height: 25px;
+    margin: 0;
+  }
+
+  .goods-list__price {
+    width: 258px;
+    margin-left: 26px;
   }
 }
