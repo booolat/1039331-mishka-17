@@ -64,6 +64,11 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/triple-set-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .week-deal__price {
@@ -158,6 +163,10 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/triple-set-tablet@2x.jpg");
+    }
   }
 }
 
@@ -206,5 +215,10 @@
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("img/triple-set-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 }
