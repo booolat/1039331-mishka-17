@@ -9,10 +9,22 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 10px;
+
+  &:hover .copyright__icon {
+    fill: @aquamarine;
+  }
+
+  &:active .copyright__icon {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link svg {
   margin-top: 14px;
+}
+
+.copyright__wrapper:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
