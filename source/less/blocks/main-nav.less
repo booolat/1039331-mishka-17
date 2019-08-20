@@ -23,11 +23,11 @@
   width: 100%;
 
   &:hover .main-nav__link {
-  color: rgba(0, 0, 0, 0.6);
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:active .main-nav__link {
-  color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -40,22 +40,15 @@
   color: black;
   padding-left: 76px;
   padding-top: 26px;
+
+  &:hover .main-nav__icon {
+    opacity: 1;
+    fill: #63d1bb;
 }
 
 .main-nav__item--bin {
   min-height: 80px;
   border-bottom: 1px solid @lightgrey;
-}
-
-.main-nav__link {
-  &:hover .main-nav__icon {
-    opacity: 1;
-    fill: #63d1bb;
-  }
-
-  &:active .main-nav__icon {
-    opacity: 0.3;
-  }
 }
 
 .main-nav__icon--search {
