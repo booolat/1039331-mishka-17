@@ -11,41 +11,76 @@
   margin-bottom: 27px;
 }
 
+.extra-nav:hover,
+.extra-nav:focus {
+  margin-bottom: 22px;
+}
+
+.extra-nav__icon {
+  fill: #149080;
+  opacity: 0.5;
+}
+
 .extra-nav__link {
   box-sizing: border-box;
   min-height: 103px;
+  width: 100%;
   text-decoration: none;
-  padding: 30px;
-  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &:active .extra-nav__item {
+    opacity: 0.3;
+  }
+
+  &:hover .extra-nav__icon {
+    opacity: 0.7;
+  }
+
+  &:focus .extra-nav__icon {
+    opacity: 0.7;
+  }
+
+  &:active .extra-nav__icon {
+    opacity: 0.3;
+  }
 }
 
 .extra-nav__link--interior {
   background-color: @seafoam-blue;
+  padding-left: 30px;
+  padding-top: 23px;
+  padding-right: 37px;
+}
+
+.extra-nav__link--interior:hover,
+.extra-nav__link--interior:focus {
+  min-height: 108px;
+  padding-top: 18px;
 }
 
 .extra-nav__link--toys {
   background-color: @aquamarine;
+  padding-left: 30px;
+  padding-top: 21px;
+  padding-right: 28px;
+}
+
+.extra-nav__link--toys:hover,
+.extra-nav__link--toys:focus {
+  min-height: 108px;
+  padding-top: 16px;
 }
 
 .extra-nav__image-wrapper--interior {
-  min-width: 40px;
+  width: 40px;
   min-height: 62px;
-  opacity: 0.5;
-  fill: #149080;
-  position: absolute;
-  top: 701px;
-  right: 20px;
 }
 
 .extra-nav__image-wrapper--toys {
-  min-width: 60px;
+  width: 60px;
   min-height: 60px;
-  // fill: #149080;
-  // почему-то fill не работает на этой svg, пришлось менять в коде
-  opacity: 0.5;
-  position: absolute;
-  top: 802px;
-  right: 11px;
 }
 
 .extra-nav__item {
@@ -64,7 +99,12 @@
     min-height: 119px;
     flex-direction: row;
     margin-top: -118px;
-    margin-bottom: 0;
+    margin-bottom: 136px;
+  }
+
+  .extra-nav:hover,
+  .extra-nav:focus {
+    margin-bottom: 131px;
   }
 
   .extra-nav::after {
@@ -78,8 +118,8 @@
 
   .extra-nav__link {
     width: 334px;
-    min-height: 119px;
-    padding-top: 27px;
+    height: 119px;
+    padding-top: 30px;
     padding-left: 36px;
     padding-right: 36px;
     font-size: 20px;
@@ -88,17 +128,21 @@
     justify-content: space-between;
   }
 
+  .extra-nav__link:hover,
+  .extra-nav__link:focus {
+    height: 124px;
+    padding-top: 25px;
+  }
+
   .extra-nav__item {
     width: 110px;
   }
 
   .extra-nav__image-wrapper--interior {
-    position: static;
     width: 40px;
   }
 
   .extra-nav__image-wrapper--toys {
-    position: static;
     width: 60px;
   }
 }
@@ -106,7 +150,12 @@
 @media (min-width: @desktop-width) {
   .extra-nav {
     width: 1050px;
-    // margin-bottom: 170px;
+    margin-bottom: 70px;
+  }
+
+  .extra-nav:hover,
+  .extra-nav:focus {
+    margin-bottom: 65px;
   }
 
   .extra-nav__link {

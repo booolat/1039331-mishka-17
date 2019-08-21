@@ -46,6 +46,15 @@
   line-height: 24px;
 }
 
+.goods-list__item-title:hover,
+.goods-list__item-title:focus {
+  opacity: 0.6;
+}
+
+.goods-list__item-title:active {
+  opacity: 0.3;
+}
+
 .goods-list__details {
   margin: 0;
   padding-left: 28px;
@@ -71,9 +80,20 @@
   display: block;
   width: 20px;
   height: 19px;
-  background-image: url("../img/cart-svg.svg");
-  background-repeat: no-repeat;
+}
+
+.goods-list__icon {
   opacity: 0.2;
+}
+
+.goods-list__icon:hover,
+.goods-list__icon:focus {
+  fill: @seafoam-blue;
+  opacity: 1;
+}
+
+.goods-list__icon:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
