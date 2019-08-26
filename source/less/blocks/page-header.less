@@ -4,20 +4,21 @@
   align-items: center;
   padding-left: 50px;
   padding-right: 50px;
-
-  &:hover .page-header__logo-image--wrapper {
-    opacity: 0.6;
-  }
-
-  &:active .page-header__logo-image--wrapper {
-    opacity: 0.3;
-  }
 }
 
 .page-header__logo-image--wrapper {
   width: 86px;
   height: 35px;
   margin: 0 auto;
+}
+
+.page-header__logo-image--wrapper:hover,
+.page-header__logo-image--wrapper:focus {
+  opacity: 0.6;
+}
+
+.page-header__logo-image--wrapper:active {
+  opacity: 0.3;
 }
 
 .page-header__logo-tablet {

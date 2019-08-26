@@ -9,10 +9,8 @@
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
-    <div style="display: none">
-      <include src="source/img/sprite.svg"></include>
-    </div>
-    <svg style="display:none">
+    <div style="display: none"><include src="build/img/sprite.svg"></include></div>
+    <!-- <svg style="display:none">
       <symbol viewBox="-1 -1 20 20" id="icon-search">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
           <path d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"></path>
@@ -84,7 +82,7 @@
           <path d="M226.001,269.871l27.438,15.934v-23.346l-27.438-15.94V269.871z M277.347,238.627v2.453 c0,1.817-3.458,3.29-7.73,3.29c-4.266,0-7.727-1.473-7.727-3.29v-4.059h0.024c0.26,1.714,3.604,3.073,7.702,3.073 c4.272,0,7.729-1.474,7.729-3.285c0-1.819-3.457-3.289-7.729-3.289c-0.339,0-0.675,0.01-1.002,0.03l-4.975-2.888v3.086 c0,1.817-3.454,3.29-7.723,3.29c-2.683,0-5.045-0.583-6.433-1.467c-0.196-0.203-0.439-0.401-0.732-0.586 c-0.363-0.381-0.565-0.797-0.565-1.236v-2.986l-4.807,2.792c-0.347-0.017-0.696-0.033-1.054-0.033c-4.267,0-7.727,1.469-7.727,3.289 c0,1.811,3.46,3.285,7.727,3.285c4.099,0,7.446-1.358,7.705-3.073h0.022v4.059c0,1.817-3.455,3.29-7.727,3.29 c-4.267,0-7.727-1.473-7.727-3.29v-2.42l-5.952,3.452l27.531,15.986l27.351-15.882L277.347,238.627z M263.703,248.793 c0,1.817-3.46,3.287-7.727,3.287c-4.269,0-7.729-1.47-7.729-3.287v-4.059h0.024c0.26,1.715,3.603,3.076,7.705,3.076 c4.101,0,7.443-1.361,7.705-3.076h0.021V248.793L263.703,248.793z M258.558,262.666v23.144L286,269.871v-23.144L258.558,262.666z  M255.917,232.762c4.269,0,7.723-1.47,7.723-3.286c0-1.814-3.454-3.287-7.723-3.287c-4.27,0-7.729,1.472-7.729,3.287 C248.187,231.292,251.647,232.762,255.917,232.762"></path>
         </svg>
       </symbol>
-    </svg>
+    </svg> -->
     <header class="page-header">
       <div class="page-header__logo-image--wrapper">
         <picture>
@@ -111,7 +109,7 @@
           </li>
           <li class="main-nav__item main-nav__item--bin">
             <a class="main-nav__link main-nav__link--bin" href="bin.html">Корзина: пока пуста
-              <svg class="main-nav__icon main-nav__icon--bin" width="21" height="18"><use xlink:href="#icon-bin"></use></svg>
+              <svg class="main-nav__icon main-nav__icon--bin" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
             </a>
           </li>
           <li class="main-nav__item main-nav__item--shipping">
@@ -133,13 +131,13 @@
         <a class="extra-nav__link extra-nav__link--interior" href="interior.html">
           <p class="extra-nav__item extra-nav__item--interior">Предметы интерьера</p>
           <div class="extra-nav__image-wrapper--interior">
-            <svg class="extra-nav__icon" width="40" height="62"><use xlink:href="#interior-icon"></use></svg>
+            <svg class="extra-nav__icon" width="40" height="62"><use xlink:href="#icon-interior"></use></svg>
           </div>
         </a>
         <a class="extra-nav__link extra-nav__link--toys" href="toys.html">
           <p class="extra-nav__item extra-nav__item--toys">Детские игрушки</p>
           <div class="extra-nav__image-wrapper--toys">
-            <svg class="extra-nav__icon" width="60" height="60"><use xlink:href="#toys-icon"></use></svg>
+            <svg class="extra-nav__icon" width="60" height="60"><use xlink:href="#icon-toy"></use></svg>
           </div>
         </a>
       </div>
@@ -237,7 +235,7 @@
       <section class="reviews">
         <h2 class="reviews__title">Отзывы</h2>
         <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек.
-          В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          В отчаянии, я накупила аксессуаров и игрушек в Мишке,<br> и мои фотографии сразу стали более стильными, а также набирают больше лайков!
         </p>
         <div class="reviews__wrapper">
           <p class="reviews__author">Анастасия Красильникова</p>
@@ -255,47 +253,42 @@
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
+        <svg class="contacts__flag" width="47" height="81"><use xlink:href="#icon-flag"></use></svg>
         <address class="contacts__info">
-          <table class="contacts__table">
-            <tr class="contacts__section">
-              <td class="contacts__field">e-mail:</td>
-              <td class="contacts__value">info@mimimishkashop.ru</td>
-            </tr>
-            <tr class="contacts__section">
-              <td class="contacts__field">адрес:</td>
-              <td class="contacts__value">
-                г. Санкт-Петербург,<br>
-                ул. Большая<br>Конюшенная,<br>
-                д. 19/8, офис 101</td>
-            </tr>
-          </table>
+          <p class="contacts__field">e-mail:</p>
+          <p class="contacts__value contacts__value--mail">info@mimimishkashop.ru</p>
+          <p class="contacts__field">адрес:</p>
+          <p class="contacts__value contacts__value--address">
+                <!-- г. Санкт-Петербург, ул.&nbspБольшая Конюшенная, д.&nbsp19/8,&nbspофис 101 -->
+                г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8,&nbspофис 101
+          </p>
         </address>
         <div class="contacts__map-wrapper">
         </div>
-        <a class="contacts__button" href="reachus.html">
+        <a class="contacts__button" href="reach_us.html">
           Напишите нам
         </a>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__logo-wrapper">
-        <svg class="page-footer__logo" width="102" height="34"><use xlink:href="#footer-logo"></use></svg>
+        <svg class="page-footer__logo" width="102" height="34"><use xlink:href="#logo-footer"></use></svg>
       </div>
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Instagram
-              <svg class="page-footer__icon" width="22" height="21"><use xlink:href="#footer-insta"></use></svg>
+              <svg class="page-footer__icon" width="22" height="21"><use xlink:href="#icon-insta"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Facebook
-              <svg class="page-footer__icon" width="15" height="28"><use xlink:href="#footer-facebook"></use></svg>
+              <svg class="page-footer__icon" width="15" height="28"><use xlink:href="#icon-fb"></use></svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--twitter" href="https://www.twitter.com/htmlacademy">Twitter
-              <svg class="page-footer__icon" width="23" height="20"><use xlink:href="#footer-twitter"></use></svg>
+              <svg class="page-footer__icon" width="23" height="20"><use xlink:href="#icon-twitter"></use></svg>
             </a>
           </li>
         </ul>
@@ -304,7 +297,7 @@
         <div class="copyright__wrapper">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <svg class="copyright__icon" width="27" height="34"><use xlink:href="#footer-copyright"></use></svg>
+            <svg class="copyright__icon" width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
           </a>
         </div>
       </div>

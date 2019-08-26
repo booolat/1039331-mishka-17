@@ -1,13 +1,17 @@
 .week-deal {
-  box-sizing: border-box;
+  // box-sizing: border-box;
   width: 260px;
   height: 795px;
   margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
   font-size: 15px;
   line-height: 24px;
   color: #444444;
   display: flex;
   flex-direction: column;
+  border-bottom: 6px solid white;
+  border-image: url("../img/bg-zigzag-line.svg") 120 round;
 }
 
 .week-deal__item-name {
@@ -104,7 +108,12 @@
     margin: 0 auto;
     width: 668px;
     flex-wrap: wrap;
-    margin-bottom: 43px;
+    padding-bottom: 43px;
+    padding-left: 51px;
+    padding-right: 53px;
+    // margin-bottom: 43px;
+    border-bottom: 15px solid transparent;
+    border-image: url("../img/bg-zigzag-fill.svg") 200px ;
   }
 
   .week-deal__description {
@@ -154,7 +163,7 @@
 
   .week-deal__image {
     margin-left: 40px;
-    margin-bottom: 0;
+    // margin-bottom: 50px;
     margin-top: 5px;
     order: 1;
     width: 334px;
@@ -172,10 +181,14 @@
 
 @media (min-width: @desktop-width) {
   .week-deal {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
     min-width: 1050px;
-    min-height: 670px;
+    min-height: 728px;
     margin-top: 60px;
-    padding-left: 174px;
+    padding-left: 175px;
+    border-bottom: 23px solid transparent;
   }
 
   .week-deal__item-name {
@@ -210,7 +223,9 @@
     width: 525px;
     height: 636px;
     margin: 0;
-    margin-left: 60px;
+    margin-right: 0px;
+    margin-left: auto;
+
     background-image: url("../img/triple-set-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
