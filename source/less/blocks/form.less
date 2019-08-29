@@ -158,6 +158,10 @@
   background-color: @seafoam-blue;
 }
 
+.form__radio:focus + .radio-indicator {
+  border: 2px solid @seafoam-blue;
+}
+
 .form__checkbox + .checkbox-indicator {
   position: absolute;
   top: -10px;
@@ -187,6 +191,10 @@
 .form__checkbox + .checkbox-indicator:active {
   border: 2px solid @greyish-brown;
   opacity: 0.3;
+}
+
+.form__checkbox:focus + .checkbox-indicator {
+  border: 2px solid @seafoam-blue;
 }
 
 .form__text-input {
@@ -224,63 +232,19 @@
   border-bottom: 2px solid @seafoam-blue;
 }
 
-// .form__field--phone {
-//   &:hover .form__icon {
-//     opacity: 1;
-//     fill: @seafoam-blue;
-//   }
-//
-//   &:focus .form__icon {
-//     opacity: 1;
-//     fill: @seafoam-blue;
-//   }
-//
-//   &:active .form__icon {
-//     opacity: 1;
-//     fill: @seafoam-blue;
-//   }
-//
-//   &:hover input[type="tel"] {
-//     border-bottom: 2px solid @seafoam-blue;
-//   }
-//
-//   &:focus input[type="tel"] {
-//     border-bottom: 2px solid @seafoam-blue;
-//   }
-//
-//   &:active input[type="tel"] {
-//     border-bottom: 2px solid @seafoam-blue;
-//   }
-// }
+.form__field--phone {
+  &:hover .form__icon {
+    opacity: 1;
+    fill: @seafoam-blue;
+  }
+}
 
-// .form__field--email {
-//   &:hover .form__icon {
-//     opacity: 1;
-//     fill: @seafoam-blue;
-//   }
-//
-//   &:focus .form__icon {
-//     opacity: 1;
-//     fill: @seafoam-blue;
-//   }
-//
-//   &:active .form__icon {
-//     opacity: 1;
-//     fill: @seafoam-blue;
-//   }
-//
-//   &:hover input[type="email"] {
-//     border-bottom: 2px solid @seafoam-blue;
-//   }
-//
-//   &:focus input[type="email"] {
-//     border-bottom: 2px solid @seafoam-blue;
-//   }
-//
-//   &:active input[type="email"] {
-//     border-bottom: 2px solid @seafoam-blue;
-//   }
-// }
+.form__field--email {
+  &:hover .form__icon {
+    opacity: 1;
+    fill: @seafoam-blue;
+  }
+}
 
 .form__mail-input {
   width: 260px;
@@ -354,6 +318,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  background-color: white;
   text-transform: uppercase;
   color: @greyish-brown;
   margin-bottom: 27px;
