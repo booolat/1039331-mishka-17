@@ -1,0 +1,131 @@
+.modal {
+  box-sizing: border-box;
+  width: 320px;
+  min-height: 336px;
+  margin: 0;
+  outline: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  background-color: white;
+  padding: 30px;
+  top: 100px;
+  position: fixed;
+  left: 50%;
+  margin-left: -160px;
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
+.modal__title {
+  font-size: 25px;
+  line-height: 30px;
+  width: 150px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.modal__text {
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+  color: @greyish-brown;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.modal__selector {
+  width: 260px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.modal__label {
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  margin-bottom: 31px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  padding-top: 16px;
+}
+
+.modal__submit {
+  box-sizing: border-box;
+  width: 260px;
+  height: 52px;
+  background-color: @seafoam-blue;
+  border: 0;
+  color: white;
+  text-transform: uppercase;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.modal__radio + .modal__radio-indicator {
+  position: absolute;
+  top: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+}
+
+.modal__radio:checked + .modal__radio-indicator {
+  border: 2px solid @seafoam-blue;
+}
+
+.modal__radio:hover + .modal__radio-indicator {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+.modal__radio:focus + .modal__radio-indicator {
+  border: 2px solid @seafoam-blue;
+}
+
+@media (min-width: @tablet-width) {
+  .modal {
+    width: 566px;
+    padding-left: 107px;
+    padding-right: 107px;
+    padding-top: 34px;
+    left: 50%;
+    margin-left: -283px;
+  }
+
+  .modal__title {
+    width: 500px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+
+  .modal__text {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 23px;
+  }
+
+  .modal__selector {
+    width: 350px;
+  }
+
+  .modal__label {
+    width: 112px;
+  }
+
+  .modal__submit {
+    width: 350px;
+  }
+
+  .modal__radio + .modal__radio-indicator {
+    width: 112px;
+  }
+}

@@ -100,6 +100,25 @@
         <p class="week-deal__price">Цена: 990 руб.</p>
         <a class="week-deal__button" href="#">Заказать</a>
       </section>
+      <section class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__selector" action="https://echo.htmlacademy.ru" method="post">
+          <label class="modal__label" for="s">S
+            <input class="modal__radio visually-hidden" type="radio" id="s" name="size-selector" value="small" checked>
+            <span class="modal__radio-indicator"></span>
+          </label>
+          <label class="modal__label" for="m">M
+            <input class="modal__radio visually-hidden" type="radio" id="m" name="size-selector" value="medium">
+            <span class="modal__radio-indicator"></span>
+          </label>
+          <label class="modal__label" for="l">L
+            <input class="modal__radio visually-hidden" type="radio" id="l" name="size-selector" value="large">
+            <span class="modal__radio-indicator"></span>
+          </label>
+          <input class="modal__submit" type="submit" id="add" name="add" value="Добавить">
+        </form>
+      </section>
       <section class="advantages">
         <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
@@ -229,5 +248,33 @@
         </div>
       </div>
     </footer>
+    <script>
+      var link = document.querySelector(".week-deal__button");
+      var popup = document.querySelector(".modal");
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+      });
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (popup.classList.contains("modal-show")) {
+            popup.classList.remove("modal-show");
+          }
+        }
+      });
+    </script>
+    <script>
+      var button = document.querySelector(".page-header__menu-button");
+      var menu = document.querySelector(".main-nav");
+      button.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        menu.classList.toggle("main-nav--hide");
+      });
+      button.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        button.classList.toggle("page-header__menu-button--open");
+      });
+    </script>
   </body>
 </html>

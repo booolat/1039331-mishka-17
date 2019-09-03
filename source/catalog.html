@@ -73,7 +73,7 @@
             </h3>
             <p class="goods-list__details">Рост 30 см, вес 200 г</p>
             <p class="goods-list__price">1 200 руб.
-              <a class="goods-list__cart" href="cart.html"><svg class="goods-list__icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg></a>
+              <a class="goods-list__cart"><svg class="goods-list__icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg></a>
             </p>
           </div>
         </li>
@@ -94,7 +94,7 @@
             </h3>
             <p class="goods-list__details">Диаметр 15 см, высота 10 см</p>
             <p class="goods-list__price">690 руб.
-              <a class="goods-list__cart" href="cart.html"><svg class="goods-list__icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg></a>
+              <a class="goods-list__cart"><svg class="goods-list__icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg></a>
             </p>
           </div>
         </li>
@@ -115,11 +115,30 @@
             </h3>
             <p class="goods-list__details">Диаметр 30 см, высота 30 см</p>
             <p class="goods-list__price">1 500 руб.
-              <a class="goods-list__cart" href="cart.html"><svg class="goods-list__icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg></a>
+              <a class="goods-list__cart"><svg class="goods-list__icon" width="21" height="20"><use xlink:href="#icon-cart"></use></svg></a>
             </p>
           </div>
         </li>
       </ul>
+      <section class="modal">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <p class="modal__text">Выберите размер:</p>
+        <form class="modal__selector" action="https://echo.htmlacademy.ru" method="post">
+          <label class="modal__label" for="s">S
+            <input class="modal__radio visually-hidden" type="radio" id="s" name="size-selector" value="small" checked>
+            <span class="modal__radio-indicator"></span>
+          </label>
+          <label class="modal__label" for="m">M
+            <input class="modal__radio visually-hidden" type="radio" id="m" name="size-selector" value="medium">
+            <span class="modal__radio-indicator"></span>
+          </label>
+          <label class="modal__label" for="l">L
+            <input class="modal__radio visually-hidden" type="radio" id="l" name="size-selector" value="large">
+            <span class="modal__radio-indicator"></span>
+          </label>
+          <input class="modal__submit" type="submit" id="add" name="add" value="Добавить">
+        </form>
+      </section>
       <section class="manufacturing">
         <svg class="manufacturing__icon" width="40" height="30" viewBox="0 5 32 28"><use xlink:href="#icon-video"></use></svg>
         <h2 class="manufacturing__title">Процесс производства</h2>
@@ -162,5 +181,33 @@
         </div>
       </div>
     </footer>
+    <script>
+      var cart = document.querySelector(".goods-list__cart");
+      var size = document.querySelector(".modal");
+      cart.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        size.classList.add("modal-show");
+      });
+      window.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+          evt.preventDefault();
+          if (size.classList.contains("modal-show")) {
+            size.classList.remove("modal-show");
+          }
+        }
+      });
+    </script>
+    <script>
+      var button = document.querySelector(".page-header__menu-button");
+      var menu = document.querySelector(".main-nav");
+      button.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        menu.classList.toggle("main-nav--hide");
+      });
+      button.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        button.classList.toggle("page-header__menu-button--open");
+      });
+    </script>
   </body>
 </html>
