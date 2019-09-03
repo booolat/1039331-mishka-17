@@ -1,4 +1,16 @@
 .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.modal__popup {
   box-sizing: border-box;
   width: 320px;
   min-height: 336px;
@@ -11,7 +23,6 @@
   position: fixed;
   left: 50%;
   margin-left: -160px;
-  display: none;
 }
 
 .modal-show {
@@ -92,7 +103,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .modal {
+  .modal__popup {
     width: 566px;
     padding-left: 107px;
     padding-right: 107px;

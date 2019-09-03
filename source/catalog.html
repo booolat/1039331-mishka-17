@@ -120,25 +120,27 @@
           </div>
         </li>
       </ul>
-      <section class="modal">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__text">Выберите размер:</p>
-        <form class="modal__selector" action="https://echo.htmlacademy.ru" method="post">
-          <label class="modal__label" for="s">S
-            <input class="modal__radio visually-hidden" type="radio" id="s" name="size-selector" value="small" checked>
-            <span class="modal__radio-indicator"></span>
-          </label>
-          <label class="modal__label" for="m">M
-            <input class="modal__radio visually-hidden" type="radio" id="m" name="size-selector" value="medium">
-            <span class="modal__radio-indicator"></span>
-          </label>
-          <label class="modal__label" for="l">L
-            <input class="modal__radio visually-hidden" type="radio" id="l" name="size-selector" value="large">
-            <span class="modal__radio-indicator"></span>
-          </label>
-          <input class="modal__submit" type="submit" id="add" name="add" value="Добавить">
-        </form>
-      </section>
+      <div class="modal">
+        <section class="modal__popup">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal__text">Выберите размер:</p>
+          <form class="modal__selector" action="https://echo.htmlacademy.ru" method="post">
+            <label class="modal__label" for="s">S
+              <input class="modal__radio visually-hidden" type="radio" id="s" name="size-selector" value="small" checked>
+              <span class="modal__radio-indicator"></span>
+            </label>
+            <label class="modal__label" for="m">M
+              <input class="modal__radio visually-hidden" type="radio" id="m" name="size-selector" value="medium">
+              <span class="modal__radio-indicator"></span>
+            </label>
+            <label class="modal__label" for="l">L
+              <input class="modal__radio visually-hidden" type="radio" id="l" name="size-selector" value="large">
+              <span class="modal__radio-indicator"></span>
+            </label>
+            <input class="modal__submit" type="submit" id="add" name="add" value="Добавить">
+          </form>
+        </section>
+      </div>
       <section class="manufacturing">
         <svg class="manufacturing__icon" width="40" height="30" viewBox="0 5 32 28"><use xlink:href="#icon-video"></use></svg>
         <h2 class="manufacturing__title">Процесс производства</h2>
@@ -182,12 +184,16 @@
       </div>
     </footer>
     <script>
-      var cart = document.querySelector(".goods-list__cart");
+      var cart = document.querySelectorAll("a.goods-list__cart");
       var size = document.querySelector(".modal");
-      cart.addEventListener("click", function (evt) {
+
+      for (var i = 0; i < cart.length; i++) {
+      cart[i].addEventListener("click", function (evt) {
         evt.preventDefault();
         size.classList.add("modal-show");
       });
+      }
+
       window.addEventListener("keydown", function (evt) {
         if (evt.keyCode === 27) {
           evt.preventDefault();
