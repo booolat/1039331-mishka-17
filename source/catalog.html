@@ -120,7 +120,7 @@
           </div>
         </li>
       </ul>
-      <div class="modal">
+      <div class="modal wrapper">
         <section class="modal__popup">
           <h2 class="modal__title">Добавить в корзину</h2>
           <p class="modal__text">Выберите размер:</p>
@@ -183,37 +183,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      var cart = document.querySelectorAll("a.goods-list__cart");
-      var size = document.querySelector(".modal");
-
-      for (var i = 0; i < cart.length; i++) {
-      cart[i].addEventListener("click", function (evt) {
-        evt.preventDefault();
-        size.classList.add("modal-show");
-      });
-      }
-
-      window.addEventListener("keydown", function (evt) {
-        if (evt.keyCode === 27) {
-          evt.preventDefault();
-          if (size.classList.contains("modal-show")) {
-            size.classList.remove("modal-show");
-          }
-        }
-      });
-    </script>
-    <script>
-      var button = document.querySelector(".page-header__menu-button");
-      var menu = document.querySelector(".main-nav");
-      button.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        menu.classList.toggle("main-nav--hide");
-      });
-      button.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        button.classList.toggle("page-header__menu-button--open");
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
