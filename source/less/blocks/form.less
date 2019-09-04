@@ -30,6 +30,11 @@
 
 .form__field--phone {
   margin-top: 9px;
+
+  &:hover .form__icon {
+    opacity: 1;
+    fill: @seafoam-blue;
+  }
 }
 
 .form__wrapper {
@@ -43,7 +48,7 @@
 }
 
 .form-wrapper--phone {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .form-wrapper--email {
@@ -61,7 +66,7 @@
   color: @seafoam-blue;
   text-transform: uppercase;
   margin: 0;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -134,12 +139,6 @@
 
 .form__radio + .form__radio-indicator:hover {
   border: 2px solid @seafoam-blue;
-}
-
-.form__label {
-  &:focus .form__radio-indicator {
-    background: red;
-  }
 }
 
 .form__radio + .form__radio-indicator:active {
@@ -217,7 +216,7 @@
 .form__phone-input {
   outline: 0;
   width: 260px;
-  border:0;
+  border: 0;
   border-bottom: 2px solid black;
   padding-bottom: 12px;
   margin-bottom: 32px;
@@ -232,13 +231,6 @@
   border-bottom: 2px solid @seafoam-blue;
 }
 
-.form__field--phone {
-  &:hover .form__icon {
-    opacity: 1;
-    fill: @seafoam-blue;
-  }
-}
-
 .form__field--email {
   &:hover .form__icon {
     opacity: 1;
@@ -248,9 +240,9 @@
 
 .form__mail-input {
   width: 260px;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
   border-bottom: 2px solid black;
   padding-bottom: 14px;
   margin-bottom: 32px;
@@ -511,7 +503,7 @@
   }
 
   .form__text-input::placeholder,
-    .form__comment::placeholder {
+  .form__comment::placeholder {
     font-size: 19px;
     line-height: 18px;
   }
@@ -521,7 +513,7 @@
     height: 76px;
     margin-right: 172px;
     margin-left: auto;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 19px;
     line-height: 18px;
   }
@@ -626,7 +618,7 @@
 
   .form__label--name {
     width: auto;
-    margin-right: 0px;
+    margin-right: 0;
     margin-left: 227px;
   }
 
