@@ -50,22 +50,22 @@
 .extra-nav__link--interior {
   background-color: @seafoam-blue;
   padding-left: 30px;
-  padding-top: 26px;
-  padding-right: 37px;
+  padding-top: 23px;
+  padding-right: 35px;
 }
 
-.extra-nav__link--interior:hover,
-.extra-nav__link--interior:focus {
-  min-height: 108px;
-  padding-top: 18px;
-  margin-top: -5px;
-}
+// .extra-nav__link--interior:hover,
+// .extra-nav__link--interior:focus {
+//   min-height: 108px;
+//   padding-top: 18px;
+//   margin-top: -5px;
+// }
 
 .extra-nav__link--toys {
   background-color: @aquamarine;
   padding-left: 30px;
-  padding-top: 26px;
-  padding-right: 28px;
+  padding-top: 22px;
+  padding-right: 26px;
 }
 
 .extra-nav__link--toys:hover,
@@ -93,6 +93,7 @@
   color: white;
   width: 120px;
   height: 43px;
+  padding-top: 3px;
 }
 
 @media (min-width: @tablet-width) {
@@ -100,9 +101,14 @@
     width: 668px;
     min-height: 119px;
     flex-direction: row;
-    margin-top: -118px;
-    margin-bottom: 136px;
+    // margin: 0 auto;
+    margin-bottom: 134px;
     align-items: flex-end;
+    position: absolute;
+    top: 710px;
+    left: 50%;
+    transform: translateX(-334px);
+    z-index: 0;
   }
 
   .extra-nav:hover,
@@ -110,16 +116,17 @@
     margin-bottom: 136px;
   }
 
-  .extra-nav::after {
-    content: "";
-    width: 100%;
-    height: 24px;
-    position: absolute;
-    top: 822px;
-    background-image: url("../img/bg-zigzag-fill.svg");
-    background-position: top center;
-    background-repeat: repeat-x;
-  }
+  // .extra-nav::after {
+  //   content: "";
+  //   width: 100%;
+  //   height: 24px;
+  //   position: absolute;
+  //   top: 822px;
+  //   background-image: url("../img/bg-zigzag-fill.svg");
+  //   background-position: top center;
+  //   background-repeat: repeat-x;
+  //   z-index: 5;
+  // }
 
   .extra-nav__link {
     width: 334px;
@@ -143,6 +150,7 @@
 
   .extra-nav__item {
     width: 110px;
+    margin-top: -5px;
   }
 
   .extra-nav__image-wrapper--interior {
@@ -151,6 +159,7 @@
 
   .extra-nav__image-wrapper--toys {
     width: 60px;
+    margin-right: -3px;
   }
 }
 

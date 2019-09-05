@@ -2,7 +2,7 @@ var button = document.querySelector(".page-header__menu-button");
 var menu = document.querySelector(".main-nav");
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
-  menu.classList.toggle("main-nav--hide");
+  menu.classList.toggle("main-nav--show");
 });
 button.addEventListener("click", function (evt) {
   evt.preventDefault();
