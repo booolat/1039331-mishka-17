@@ -9,8 +9,18 @@
   color: #444444;
   display: flex;
   flex-direction: column;
-  border-bottom: 6px solid white;
-  border-image: url("../img/bg-zigzag-line.svg") 120 round;
+  position: relative;
+}
+
+.week-deal:after {
+  content: "";
+  width: 320px;
+  height: 6px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-size: cover;
+  position: absolute;
+  bottom: -2px;
+  left: -5px;
 }
 
 .week-deal__item-name {
@@ -28,8 +38,8 @@
   text-transform: uppercase;
   color: @seafoam-blue;
   margin: 0;
-  margin-top: 4px;
-  margin-bottom: 24px;
+  margin-top: 6px;
+  margin-bottom: 22px;
 }
 
 .week-deal__description {
@@ -110,11 +120,22 @@
     margin: 0 auto;
     width: 668px;
     flex-wrap: wrap;
-    padding-bottom: 43px;
+    padding-bottom: 40px;
     padding-left: 51px;
     padding-right: 53px;
-    border-bottom: 15px solid transparent;
-    border-image: url("../img/bg-zigzag-fill.svg") 200px;
+    border-bottom: 0px;
+  }
+
+  .week-deal:after {
+    content: "";
+    width: 768px;
+    height: 16px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: cover;
+    background-position: -15px 0;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
   }
 
   .week-deal__description {
@@ -128,7 +149,7 @@
   .week-deal__item-name {
     width: 334px;
     position: absolute;
-    top: 880px;
+    top: -100px;
     font-size: 43px;
     line-height: 50px;
     min-width: 480px;
@@ -138,10 +159,11 @@
 
   .week-deal__title {
     position: absolute;
-    top: 882px;
+    top: -95px;
     margin-left: 550px;
     width: 110px;
     text-align: center;
+    line-height: 17px;
   }
 
   .week-deal__details {
@@ -164,7 +186,6 @@
 
   .week-deal__image {
     margin-left: 40px;
-    // margin-bottom: 50px;
     margin-top: 5px;
     order: 1;
     width: 334px;
@@ -192,23 +213,36 @@
     border-bottom: 23px solid transparent;
   }
 
+  .week-deal:after {
+    content: "";
+    width: 1050px;
+    height: 23px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: cover;
+    background-position: -30px 0;
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+  }
+
   .week-deal__item-name {
     min-width: 550px;
     font-size: 53px;
     line-height: 57px;
     position: absolute;
-    top: 958px;
+    top: 52px;
+    margin-left: -4px;
   }
 
   .week-deal__title {
-    margin-left: -145px;
-    top: 966px;
+    margin-left: -148px;
+    top: 60px;
     font-size: 17px;
     line-height: 17px;
   }
 
   .week-deal__description {
-    margin-top: 160px;
+    margin-top: 158px;
     margin-bottom: 46px;
   }
 
