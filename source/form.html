@@ -99,16 +99,17 @@
           </label>
         </div>
         <div class="form__field form__field--name">
-          <div class="form__wrapper form__wrapper--name">
+
             <h2 class="form__field-title">ФИО</h2>
-            <div class="form__title-line"></div>
-          </div>
+            <!-- <div class="form__title-line"></div> -->
+          <div class="form__wrapper form__wrapper--name">
           <label class="form__label form__label--name" for="name">Имя:</label>
           <input class="form__text-input form__text-input--name" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
           <label class="form__label form__label--name" for="surname">Фамилия:</label>
           <input class="form__text-input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
           <label class="form__label form__label--name" for="second-name">Отчество:</label>
           <input class="form__text-input" type="text" id="second-name" name="second-name" placeholder="Отчество, если желаете">
+          </div>
         </div>
         <div class="form__field form__field--phone">
           <div class="form__wrapper form__wrapper--phone">
@@ -121,10 +122,13 @@
         <div class="form__field form__field--email">
           <div class="form__wrapper form__wrapper--email">
             <h2 class="form__field-title form__field-title--email">E-mail</h2>
-            <div class="form__title-line form__title-line--mail"></div>
-          </div>
+            <!-- <div class="form__title-line form__title-line--mail"></div> -->
+
+          <label class="form__mail-label"><span class="visually-hidden">Введите email</span>
           <input class="form__mail-input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
             <svg class="form__icon form__icon-email" width="32" height="28"><use xlink:href="#icon-mail"></use></svg>
+          </label>
+        </div>
         </div>
         <div class="form__field form__field--comment">
           <div class="form__wrapper form__wrapper--comment">
