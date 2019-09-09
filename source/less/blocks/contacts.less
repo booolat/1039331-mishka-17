@@ -7,7 +7,7 @@
   position: relative;
 }
 
-.contacts:after {
+.contacts::after {
   content: "";
   width: 320px;
   height: 6px;
@@ -142,7 +142,7 @@
     padding-top: 47px;
   }
 
-  .contacts:after {
+  .contacts::after {
     content: "";
     width: 768px;
     height: 16px;
@@ -214,7 +214,7 @@
     width: 230px;
     height: 52px;
     margin-bottom: 58px;
-    padding-left: 0px;
+    padding-left: 0;
     padding-top: 14px;
     font-size: 17px;
     line-height: 20px;
@@ -231,7 +231,7 @@
     box-sizing: border-box;
   }
 
-  .contacts:after {
+  .contacts::after {
     content: "";
     width: 1050px;
     height: 23px;
@@ -247,26 +247,22 @@
   .contacts__flag {
     order: 1;
     margin: 0;
-    margin-top: 62px;
+    // margin-top: 62px;
     display: block;
     position: absolute;
+    top: -7px;
+    left: -107px;
   }
 
   .contacts__title {
     width: 280px;
     order: 2;
     padding: 0;
+    margin-top: 70px;
     margin-left: 168px;
     margin-right: 0;
-    margin-top: 70px;
     font-size: 53px;
     line-height: 57px;
-  }
-
-  .contacts__flag {
-    margin: 0;
-    top: -7px;
-    left: -107px;
   }
 
   .contacts__info {
@@ -307,6 +303,6 @@
     width: 525px;
     height: 457px;
     right: 0;
-    transform: translateX(0px);
+    transform: translateX(0);
   }
 }
