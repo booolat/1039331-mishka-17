@@ -1,14 +1,3 @@
-var button = document.querySelector(".page-header__menu-button");
-var menu = document.querySelector(".main-nav");
-button.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  menu.classList.toggle("main-nav--show");
-});
-button.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  button.classList.toggle("page-header__menu-button--open");
-});
-
 var cart = document.querySelectorAll("a.goods-list__cart");
 var size = document.querySelector(".modal");
 

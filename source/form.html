@@ -55,89 +55,89 @@
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <p class="form__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <div class="form__field form__field--type">
-          <div class="form__wrapper">
-            <h2 class="form__field-title">Тип</h2>
-            <div class="form__title-line"></div>
+          <div class="form__wrapper form__wrapper--type">
+            <h2 class="form__field-title form__field-title--type">Тип</h2>
+            <div class="form__radio-wrapper">
+              <label class="form__label form__label--type" for="interior">Аксессуар для интерьера
+                <input class="form__radio visually-hidden" type="radio" id="interior" name="type-selector" value="interior" checked>
+                <span class="form__radio-indicator"></span>
+              </label>
+              <label class="form__label form__label--type" for="toys">Детская игрушка
+                <input class="form__radio  visually-hidden" type="radio" id="toys" name="type-selector" value="toys">
+                <span class="form__radio-indicator"></span>
+            </div>
+          </label>
           </div>
-          <label class="form__label" for="interior">Аксессуар для интерьера
-            <input class="form__radio visually-hidden" type="radio" id="interior" name="type-selector" value="interior" checked>
-            <span class="form__radio-indicator"></span>
-          </label>
-          <label class="form__label" for="toys">Детская игрушка
-            <input class="form__radio  visually-hidden" type="radio" id="toys" name="type-selector" value="toys">
-            <span class="form__radio-indicator"></span>
-          </label>
         </div>
         <div class="form__field form__field--color">
           <div class="form__wrapper form__wrapper--color">
-            <h2 class="form__field-title">Цвет</h2>
-            <div class="form__title-line"></div>
+            <h2 class="form__field-title form__field-title--color">Цвет</h2>
+            <div class="form__checkbox-wrapper">
+              <label class="form__label form__label--color" for="white">Белый
+                <input class="form__checkbox visually-hidden" type="checkbox" id="white" name="white-checkbox" checked>
+                <span class="checkbox-indicator"></span>
+              </label>
+              <label class="form__label form__label--color" for="grey">Серый
+                <input class="form__checkbox visually-hidden" type="checkbox" id="grey" name="grey-checkbox" checked>
+                <span class="checkbox-indicator"></span>
+              </label>
+              <label class="form__label form__label--color" for="tiffani">«Тиффани»
+                <input class="form__checkbox visually-hidden" type="checkbox" id="tiffani" name="tiffani-checkbox">
+                <span class="checkbox-indicator"></span>
+              </label>
+              <label class="form__label form__label--color" for="black">Черный
+                <input class="form__checkbox visually-hidden" type="checkbox" id="black" name="black-checkbox">
+                <span class="checkbox-indicator"></span>
+              </label>
+              <label class="form__label form__label--color" for="pink">Розовый
+                <input class="form__checkbox visually-hidden" type="checkbox" id="pink" name="pink-checkbox">
+                <span class="checkbox-indicator"></span>
+              </label>
+              <label class="form__label form__label--color" for="orange">Оранжевый
+                <input class="form__checkbox visually-hidden" type="checkbox" id="orange" name="orange-checkbox">
+                <span class="checkbox-indicator"></span>
+              </label>
+            </div>
           </div>
-          <label class="form__label form__label--color" for="white">Белый
-            <input class="form__checkbox visually-hidden" type="checkbox" id="white" name="white-checkbox" checked>
-            <span class="checkbox-indicator"></span>
-          </label>
-          <label class="form__label form__label--color" for="grey">Серый
-            <input class="form__checkbox visually-hidden" type="checkbox" id="grey" name="grey-checkbox" checked>
-            <span class="checkbox-indicator"></span>
-          </label>
-          <label class="form__label form__label--color" for="tiffani">«Тиффани»
-            <input class="form__checkbox visually-hidden" type="checkbox" id="tiffani" name="tiffani-checkbox">
-            <span class="checkbox-indicator"></span>
-          </label>
-          <label class="form__label form__label--color" for="black">Черный
-            <input class="form__checkbox visually-hidden" type="checkbox" id="black" name="black-checkbox">
-            <span class="checkbox-indicator"></span>
-          </label>
-          <label class="form__label form__label--color" for="pink">Розовый
-            <input class="form__checkbox visually-hidden" type="checkbox" id="pink" name="pink-checkbox">
-            <span class="checkbox-indicator"></span>
-          </label>
-          <label class="form__label form__label--color" for="orange">Оранжевый
-            <input class="form__checkbox visually-hidden" type="checkbox" id="orange" name="orange-checkbox">
-            <span class="checkbox-indicator"></span>
-          </label>
         </div>
         <div class="form__field form__field--name">
-
-            <h2 class="form__field-title">ФИО</h2>
-            <!-- <div class="form__title-line"></div> -->
           <div class="form__wrapper form__wrapper--name">
-          <label class="form__label form__label--name" for="name">Имя:</label>
-          <input class="form__text-input form__text-input--name" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
-          <label class="form__label form__label--name" for="surname">Фамилия:</label>
-          <input class="form__text-input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
-          <label class="form__label form__label--name" for="second-name">Отчество:</label>
-          <input class="form__text-input" type="text" id="second-name" name="second-name" placeholder="Отчество, если желаете">
+            <h2 class="form__field-title form__field-title--name">ФИО</h2>
+            <div class="form__input-wrapper">
+              <label class="form__label form__label--name" for="name">Имя:</label>
+              <input class="form__text-input form__text-input--name" type="text" id="name" name="name" placeholder="Введите ваше имя*" required>
+              <label class="form__label form__label--name" for="surname">Фамилия:</label>
+              <input class="form__text-input form__text-input--name" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
+              <label class="form__label form__label--name" for="second-name">Отчество:</label>
+              <input class="form__text-input form__text-input--name" type="text" id="second-name" name="second-name" placeholder="Отчество, если желаете">
+            </div>
           </div>
         </div>
         <div class="form__field form__field--phone">
           <div class="form__wrapper form__wrapper--phone">
             <h2 class="form__field-title form__field-title--phone">Тел</h2>
-            <div class="form__title-line"></div>
+            <label class="form__phone-label"><span class="visually-hidden">Введите телефон</span>
+              <input class="form__phone-input" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="[+7][0-9]{3}[0-9]{3}[0-9]{2}[0-9]{3}" required>
+              <svg class="form__icon form__icon-phone" width="26" height="25" viewBox="0 0"><use xlink:href="#icon-phone"></use></svg>
+            </label>
           </div>
-          <input class="form__phone-input" type="tel" id="phone" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" pattern="[+7][0-9]{3}[0-9]{3}[0-9]{2}[0-9]{3}" required>
-          <svg class="form__icon form__icon-phone" width="26" height="25" viewBox="0 0"><use xlink:href="#icon-phone"></use></svg>
         </div>
         <div class="form__field form__field--email">
           <div class="form__wrapper form__wrapper--email">
             <h2 class="form__field-title form__field-title--email">E-mail</h2>
-            <!-- <div class="form__title-line form__title-line--mail"></div> -->
-
-          <label class="form__mail-label"><span class="visually-hidden">Введите email</span>
-          <input class="form__mail-input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
-            <svg class="form__icon form__icon-email" width="32" height="28"><use xlink:href="#icon-mail"></use></svg>
-          </label>
-        </div>
+            <label class="form__mail-label"><span class="visually-hidden">Введите email</span>
+              <input class="form__mail-input" type="email" id="email" name="email" placeholder="Ваш Email*" required>
+              <svg class="form__icon form__icon-email" width="32" height="28" viewBox="0 0"><use xlink:href="#icon-mail"></use></svg>
+            </label>
+          </div>
         </div>
         <div class="form__field form__field--comment">
           <div class="form__wrapper form__wrapper--comment">
             <h2 class="form__field-title form__field-title--comment">Доп</h2>
-            <div class="form__title-line"></div>
+            <textarea class="form__comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <p class="form__asterisk">*Поля обязательны для заполнения</p>
+            <input class="form__submit" type="submit" id="order" name="order" value="Отправить заказ">
           </div>
-          <textarea class="form__comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          <p class="form__asterisk">*Поля обязательны для заполнения</p>
-          <input class="form__submit" type="submit" id="order" name="order" value="Отправить заказ">
         </div>
       </form>
     </main>
@@ -174,4 +174,5 @@
       </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>

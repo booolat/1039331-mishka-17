@@ -1,7 +1,7 @@
 .manufacturing {
   box-sizing: border-box;
   width: 260px;
-  min-height: 500px;
+  height: 500px;
   margin: 0 auto;
   margin-bottom: 60px;
   padding-top: 24px;
@@ -121,7 +121,7 @@
 @media (min-width: @tablet-width) {
   .manufacturing {
     width: 669px;
-    min-height: 743px;
+    height: 743px;
     padding: 0;
     outline: 0;
     margin-bottom: 64px;
@@ -181,13 +181,14 @@
   }
 
   .manufacturing__text {
-    width: 560px;
+    width: 580px;
     min-height: 94px;
     margin: 0;
     margin-left: 40px;
     margin-right: auto;
     font-size: 15px;
     line-height: 30px;
+    padding-left: 2px;
   }
 
   .manufacturing__button {
@@ -198,10 +199,9 @@
 @media (min-width: @desktop-width) {
   .manufacturing {
     width: 1050px;
-    min-height: 455px;
-    max-height: 455px;
+    height: 455px;
     flex-direction: column;
-    margin-bottom: 104px;
+    margin-bottom: 106px;
   }
 
   .manufacturing__button {
@@ -224,12 +224,13 @@
   }
 
   .manufacturing__text {
-    width: 222px;
+    width: 230px;
     margin: 0;
     min-height: 110px;
     margin-left: 78px;
     margin-top: 80px;
-    margin-bottom: 45px;
+    margin-bottom: 47px;
+    padding-left: 0;
   }
 
   .manufacturing__video {
@@ -246,5 +247,9 @@
     width: 367px;
     height: 453px;
     margin-top: 1px;
+  }
+
+  .manufacturing__button {
+    padding-top: 15px;
   }
 }
