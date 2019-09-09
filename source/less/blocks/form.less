@@ -121,7 +121,7 @@
 }
 
 .form__field-title--email {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .form__field-title--comment {
@@ -169,6 +169,10 @@
   position: relative;
 }
 
+.form__email-label {
+  position: relative;
+}
+
 .form__icon-phone {
   position: absolute;
   margin: 0;
@@ -180,6 +184,7 @@
 .form__icon-email {
   position: absolute;
   opacity: 0.2;
+  top: 32px;
   right: 4px;
   margin: 0;
 }
@@ -267,7 +272,7 @@
 
 .form__text-input--name {
   margin-top: 10px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .form__text-input:hover,
@@ -376,7 +381,7 @@
   background-color: white;
   text-transform: uppercase;
   color: @greyish-brown;
-  margin-bottom: 27px;
+  margin-bottom: 29px;
   outline: 0;
 }
 
@@ -426,8 +431,6 @@
     padding-top: 66px;
     margin: 0;
     background-color: @lightgrey2;
-    // justify-content: flex-end;
-    // align-content: flex-start;
   }
 
   .form__field--name {
@@ -457,17 +460,6 @@
     width: 668px;
     margin: 0 auto;
   }
-  //
-  // .form__wrapper--phone {
-  //   width: 668px;
-  //   margin: 0 auto;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  // }
-
-  // .form__wrapper--comment {
-  //   margin-right: 95px;
-  // }
 
   .form__checkbox-wrapper {
     width: 498px;
@@ -524,7 +516,6 @@
     margin: 0;
     margin-top: -18px;
     margin-right: 52px;
-    // margin-left: auto;
   }
 
   .form__phone-input {
@@ -540,8 +531,6 @@
   .form__mail-input {
     width: 498px;
     margin-right: 0px;
-    // margin-left: auto;
-    // margin-top: -2px;
     background-color: @lightgrey2;
     padding: 0;
     padding-bottom: 12px;
@@ -563,7 +552,6 @@
   .form__submit {
     order: 2;
     width: 230px;
-
     margin-bottom: 41px;
   }
 
@@ -587,6 +575,7 @@
 
   .form__icon-email {
     margin: 0;
+    top: -4px;
     right: 23px;
   }
 
@@ -624,8 +613,9 @@
 
   .form__label--type {
     width: 280px;
-    margin-left: 76px;
+    margin-left: 78px;
     margin-right: 0;
+    margin-top: -1px;
   }
 
   .form__label--color {
@@ -702,11 +692,14 @@
     width: 100%;
   }
 
+  .form__field--type {
+    padding-bottom: 12px;
+  }
+
   .form__field--color {
     min-height: 228px;
     justify-content: flex-start;
     padding-top: 64px;
-    // padding-left: 246px;
   }
 
   .form__field--name {
