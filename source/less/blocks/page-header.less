@@ -40,7 +40,7 @@
   padding: 0;
   border: 0;
   width: 20px;
-  height: 17px;
+  height: 18px;
   font-size: 0;
   position: absolute;
   right: 30px;
@@ -53,8 +53,12 @@
   display: none;
 }
 
+.page-header__menu-button--show {
+  display: block;
+}
+
 .page-header__menu-button--open {
-  height: 20px;
+  height: 18px;
   background-image: url("../img/icon-menu-open.svg");
 }
 
@@ -91,6 +95,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    width: 1150px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid @lightgrey;
+    border-right: 1px solid @lightgrey;
+  }
+
   .page-header__logo-wrapper {
     margin: 0 auto;
     width: 149px;
